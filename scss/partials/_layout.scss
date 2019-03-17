@@ -1,0 +1,92 @@
+.header-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1rf;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "select tag socials" 
+}
+
+.select {
+    grid-area: select;
+}
+
+.tag {
+    grid-area: tag;
+}
+
+.socials {
+    grid-area: socials;
+}
+
+.nav-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1rf;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "search nav cart" 
+}
+
+.search {
+    grid-area: search;
+    align-self: center;
+}
+
+.navbar {
+    grid-area: nav;
+}
+
+.cart {
+    grid-area: cart;
+    align-self: center;
+}
+
+.navbar-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1rf;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "left-nav mid-nav right-nav" 
+}
+
+.left-side {
+    grid-area: left-nav;
+    align-self: center;
+}
+
+.logo {
+    grid-area: mid-nav;
+    align-self: center;
+}
+
+.right-side {
+    grid-area: right-nav;
+    align-self: center;
+}
+
+.product-grid {
+    display: grid;
+    // grid-gap: 0.5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "pro1 pro2 pro3" 
+}
+
+.collection-grid {
+    display: grid;
+    // grid-gap: 0.5px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "mod vin"
+}
+
+.modern {
+    grid-area: mod;
+}
+
+.vintage {
+    grid-area: vin;
+}
+
+
