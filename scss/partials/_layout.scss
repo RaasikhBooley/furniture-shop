@@ -1,9 +1,9 @@
 .header-grid {
     display: grid;
-    grid-template-columns: 1fr 3fr 1rf;
+    grid-template-columns: 1fr 0.5fr 2fr 0.5fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-        "select tag socials" 
+        "select . tag . socials" 
 }
 
 .select {
@@ -66,27 +66,166 @@
 .product-grid {
     display: grid;
     // grid-gap: 0.5px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
+    margin-top: 3em;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 0.5em;
     grid-template-areas: 
-        "pro1 pro2 pro3" 
+        ". pro1 pro2 pro3 ."
+        ". name1 name2 name3 ."
+        ". price1 price2 price3 ." 
 }
 
+.product-left {
+    grid-area: pro1;
+    @include product;
+}
+
+.product-mid {
+    grid-area: pro2;
+    @include product;
+}
+
+.product-right {
+    grid-area: pro3;
+    @include product;
+}
+
+.name-left {
+    grid-area: name1;
+    @include name;
+}
+
+.name-mid {
+    grid-area: name2;
+    @include name;
+}
+
+.name-right {
+    grid-area: name3;
+    @include name;
+}
+.price-left {
+    grid-area: price1;
+    @include price;
+}
+.price-mid {
+    grid-area: price2;
+    @include price;
+}
+.price-right {
+    grid-area: price3;
+    @include price;
+}
 .collection-grid {
     display: grid;
     // grid-gap: 0.5px;
+    margin-top: 3em;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 
         "mod vin"
+        "fig1 fig2"
 }
 
 .modern {
     grid-area: mod;
+    @include collect;
 }
 
 .vintage {
     grid-area: vin;
+    @include collect;
 }
 
+.fig1 {
+    grid-area: fig1;
+    @include fig;
+}
+.fig2 {
+    grid-area: fig2;
+    @include fig;
+}
 
+.blog-grid {
+    display: grid;
+    /* grid-gap: 1em; */
+    margin-top: 3em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "photo info"
+}
+
+.photo {
+    grid-area: photo;
+}
+
+.content {
+    grid-area: info;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "logo link shop insta"
+}
+
+.f-logo {
+    grid-area: logo;
+}
+
+.link {
+    grid-area: link;
+}
+
+.shop {
+    grid-area: shop;
+}
+
+.insta-grid {
+    grid-area: insta;
+    display: grid;
+    padding-top: 1em;
+    padding-right: 2em;
+    grid-gap: 0.5em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+        "pic1 pic2 pic3 pic4"
+        "pic5 pic6 pic7 pic8"
+}
+
+.pic1 {
+    grid-area: pic1;
+}
+
+.pic2 {
+    grid-area: pic2;
+}
+
+.pic3 {
+    grid-area: pic3;
+}
+
+.pic4 {
+    grid-area: pic4;
+}
+
+.pic5 {
+    grid-area: pic5;
+}
+
+.pic6 {
+    grid-area: pic6;
+}
+
+.pic7 {
+    grid-area: pic7;
+}
+
+.pic8 {
+    grid-area: pic8;
+}
