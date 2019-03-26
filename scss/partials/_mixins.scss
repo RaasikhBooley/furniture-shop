@@ -1,57 +1,37 @@
 @mixin product {
     width: 370px;
     height: 360px;
-    background-color: #666666;
+    background-color: $black-light-grey;
 }
 
 @mixin collect {
     width: 570px;
     height: 373px;
-    background-color: #666666;
+    background-color: $black-light-grey;
 }
 
 @mixin name {
-    // width: 158px;
-    // height: 18px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $SourceSansPro;
     font-size: 20px;
     font-weight: 600;
-    // line-height: 2.4;
-    letter-spacing: normal;
     text-align: center;
-    color: #333333;
+    color: $black-grey;
 }
 
 @mixin price {
-
-  
-    font-family: 'Source Sans Pro', sans-serif;
-  
+    font-family: $SourceSansPro;
     font-size: 15px;
-  
-    font-weight: 600;
-
-  
+    font-weight: 600;  
     line-height: 3.2;
-  
-
     text-align: center;
     color: $warm-grey;
 }
 
 @mixin fig {
-
-  
-    font-family: 'Source Sans Pro', sans-serif;
-  
+    font-family: $SourceSansPro;
     font-size: 25px;
-  
-  
     line-height: 1.92;
-  
     letter-spacing: 2.5px;
-  
     text-align: center;
-  
-    color: #a88d7b;
+    color: $burnt-sienna;
 }

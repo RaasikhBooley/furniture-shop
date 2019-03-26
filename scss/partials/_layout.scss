@@ -119,8 +119,10 @@
 }
 .collection-grid {
     display: grid;
-    // grid-gap: 0.5px;
+    grid-gap: 7px;
     margin-top: 3em;
+    padding-left: 4em;
+    padding-right: 4em;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 
@@ -149,8 +151,10 @@
 
 .blog-grid {
     display: grid;
-    /* grid-gap: 1em; */
+    grid-gap: 1em;
     margin-top: 3em;
+    padding-left: 3.5em;
+    padding-right: 3.5em;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 
@@ -167,6 +171,7 @@
 
 .footer-grid {
     display: grid;
+    text-align: left;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 
@@ -229,3 +234,155 @@
 .pic8 {
     grid-area: pic8;
 }
+
+// grid code for alt pages like shop, about, blog, contact, lookbook
+
+.nav-grid-alt {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1rf;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "logo-alt mid-alt icons-alt" 
+}
+
+.logo-alt {
+    grid-area: logo-alt;
+    align-self: center;
+}
+
+.mid-alt {
+    grid-area: mid-alt;
+    align-self: center;
+}
+
+.icon-alt {
+    grid-area: icons-alt;
+    align-self: center;
+}
+
+.who-grid {
+    display: grid;
+    grid-gap: 1em;
+    margin-top: 3em;
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "info photo"
+}
+
+.photo {
+    grid-area: photo;
+}
+
+.content {
+    grid-area: info;
+}
+
+
+.what-grid {
+    display: grid;
+    grid-gap: 1em;
+    margin-top: 3em;
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "photo info"
+}
+
+.photo {
+    grid-area: photo;
+}
+
+.content {
+    grid-area: info;
+}
+
+// meet the team grid section
+.team-grid {
+    display: grid;
+    grid-gap: 7px;
+    margin-top: 3em;
+    padding-left: 4em;
+    padding-right: 4em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "tm1 tm2 tm3 tm4"
+        "n1 n2 n3 n4"
+        "t1 t2 t3 t4"
+        "ic1 ic2 ic3 ic4"
+}
+
+.team-member-1 {
+    grid-area: tm1;
+}
+
+.name1 {
+    grid-area: n1;
+}
+
+.title1 {
+    grid-area: t1;
+}
+
+.icons1 {
+    grid-area: ic1;
+}
+
+.team-member-2 {
+    grid-area: tm2;
+}
+
+.name2 {
+    grid-area: n2;
+}
+
+.title2 {
+    grid-area: t2;
+}
+
+.icons2 {
+    grid-area: ic2;
+}
+
+.team-member-3 {
+    grid-area: tm3;
+}
+
+.name3 {
+    grid-area: n3;
+}
+
+.title3 {
+    grid-area: t3;
+}
+
+.icons3 {
+    grid-area: ic3;
+}
+
+.team-member-4 {
+    grid-area: tm4;
+}
+
+.name4 {
+    grid-area: n4;
+}
+
+.title4 {
+    grid-area: t4;
+}
+
+.icons4 {
+    grid-area: ic4;
+}
+
+
+
+
+
+

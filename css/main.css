@@ -1,24 +1,19 @@
 * {
   margin: 0 auto; }
 
-li {
-  display: inline;
-  font-family: FontAwesome;
-  font-size: 15px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #999999; }
-
 a {
   text-decoration: none;
   font-family: Dosis;
   font-size: 15px;
   letter-spacing: 0.8px;
   color: #ffffff; }
+
+li {
+  display: inline;
+  font-size: 15px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #999999; }
 
 h1 {
   width: 597px;
@@ -31,37 +26,37 @@ h1 {
 h2 {
   width: 313px;
   height: 24px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 36px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.33;
   letter-spacing: normal;
   text-align: center;
   color: #333333; }
 
 h3 {
-  width: 46px;
   height: 12px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.33;
   letter-spacing: normal;
   text-align: left;
-  color: #e5e5e5; }
+  color: #e5e5e5;
+  padding: 1em 0; }
+
+ul {
+  padding-left: 0; }
 
 .header {
   width: 100%;
   padding: 19px 0;
   background-color: #2d2827;
   color: #999999;
-  font-family: 'Source Sans Pro', sans-serif; }
+  font-family: "Source Sans Pro", sans-serif; }
 
 .select {
   display: inline;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 12px;
   font-weight: 300;
   font-style: normal;
@@ -71,7 +66,7 @@ h3 {
   text-align: center; }
 
 .tag {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 12px;
   font-weight: normal;
   font-style: normal;
@@ -94,7 +89,7 @@ h3 {
   height: 90vh;
   background-color: #666666;
   color: #ffffff;
-  font-family: 'Dosis', sans-serif; }
+  font-family: "Dosis", sans-serif; }
 
 .navbar-grid {
   padding: 1em 0em; }
@@ -157,14 +152,12 @@ h3 {
   margin-top: 5em; }
 
 .hero-banner-2 {
-  /* width: 1900px; */
-  /* height: 552px; */
   width: 100%;
   height: 70vh;
   opacity: 0.9;
   background-color: #666666;
   color: #ffffff;
-  font-family: 'Dosis', sans-serif; }
+  font-family: "Dosis", sans-serif; }
 
 .banner-2-wrapper {
   padding-top: 3em;
@@ -175,9 +168,7 @@ h3 {
 
 .blog {
   text-align: center;
-  /* width: 1900px; */
   width: 100%;
-  /* height: 671px; */
   height: 90vh;
   background-color: #f9f9f9; }
 
@@ -193,17 +184,11 @@ h3 {
     height: 239px;
     font-family: SourceSansPro;
     font-size: 15px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1.67;
-    letter-spacing: normal;
     color: #666666; }
 
 .footer-a {
-  /* width: 1900px; */
   width: 100%;
-  /* height: 425px; */
   height: 42vh;
   background-color: #2d2827; }
 
@@ -218,13 +203,67 @@ h3 {
 
 .footer-b {
   width: 100%;
-  /* height: 85px; */
   height: 4em;
-  background-color: #d7d7d7;
-  /* white-two */ }
+  background-color: #d7d7d7; }
   .footer-b p {
     text-align: center;
     padding-top: 1.5em; }
+
+.header-alt {
+  width: 100%;
+  padding: 19px 0;
+  background-color: #2d2827;
+  color: #999999;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #eeeeee; }
+
+.nav-alt {
+  width: 100%;
+  height: 93px;
+  background-color: #ffffff;
+  color: #666666; }
+
+.nav-grid-alt {
+  padding: 1em 0em; }
+  .nav-grid-alt li {
+    padding: 0em 1.5em; }
+
+.mid-alt a {
+  color: #666666; }
+
+.hero-alt {
+  width: 100%;
+  height: 445px;
+  background-color: #666666;
+  color: #ffffff; }
+
+.title-alt {
+  padding-top: 10em;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Source Sans Pro", sans-serif; }
+
+.who {
+  text-align: center;
+  width: 100%;
+  height: 90vh;
+  background-color: #ffffff; }
+
+.what {
+  text-align: center;
+  width: 100%;
+  height: 90vh;
+  background-color: #ffffff; }
+
+.team {
+  width: 100%;
+  height: 721px;
+  background: #ffffff; }
+
+.team-member {
+  width: 270px;
+  height: 305px;
+  background-color: #666666; }
 
 .header-grid {
   display: grid;
@@ -304,34 +343,31 @@ h3 {
 
 .name-left {
   grid-area: name1;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 20px;
   font-weight: 600;
-  letter-spacing: normal;
   text-align: center;
   color: #333333; }
 
 .name-mid {
   grid-area: name2;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 20px;
   font-weight: 600;
-  letter-spacing: normal;
   text-align: center;
   color: #333333; }
 
 .name-right {
   grid-area: name3;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 20px;
   font-weight: 600;
-  letter-spacing: normal;
   text-align: center;
   color: #333333; }
 
 .price-left {
   grid-area: price1;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 15px;
   font-weight: 600;
   line-height: 3.2;
@@ -340,7 +376,7 @@ h3 {
 
 .price-mid {
   grid-area: price2;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 15px;
   font-weight: 600;
   line-height: 3.2;
@@ -349,7 +385,7 @@ h3 {
 
 .price-right {
   grid-area: price3;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 15px;
   font-weight: 600;
   line-height: 3.2;
@@ -358,7 +394,10 @@ h3 {
 
 .collection-grid {
   display: grid;
+  grid-gap: 7px;
   margin-top: 3em;
+  padding-left: 4em;
+  padding-right: 4em;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   grid-template-areas: "mod vin" "fig1 fig2"; }
@@ -377,7 +416,7 @@ h3 {
 
 .fig1 {
   grid-area: fig1;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 25px;
   line-height: 1.92;
   letter-spacing: 2.5px;
@@ -386,7 +425,7 @@ h3 {
 
 .fig2 {
   grid-area: fig2;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 25px;
   line-height: 1.92;
   letter-spacing: 2.5px;
@@ -395,8 +434,10 @@ h3 {
 
 .blog-grid {
   display: grid;
-  /* grid-gap: 1em; */
+  grid-gap: 1em;
   margin-top: 3em;
+  padding-left: 3.5em;
+  padding-right: 3.5em;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   grid-template-areas: "photo info"; }
@@ -409,6 +450,7 @@ h3 {
 
 .footer-grid {
   display: grid;
+  text-align: left;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   grid-template-areas: "logo link shop insta"; }
@@ -455,5 +497,113 @@ h3 {
 
 .pic8 {
   grid-area: pic8; }
+
+.nav-grid-alt {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1rf;
+  grid-template-rows: auto;
+  grid-template-areas: "logo-alt mid-alt icons-alt"; }
+
+.logo-alt {
+  grid-area: logo-alt;
+  align-self: center; }
+
+.mid-alt {
+  grid-area: mid-alt;
+  align-self: center; }
+
+.icon-alt {
+  grid-area: icons-alt;
+  align-self: center; }
+
+.who-grid {
+  display: grid;
+  grid-gap: 1em;
+  margin-top: 3em;
+  padding-left: 3.5em;
+  padding-right: 3.5em;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "info photo"; }
+
+.photo {
+  grid-area: photo; }
+
+.content {
+  grid-area: info; }
+
+.what-grid {
+  display: grid;
+  grid-gap: 1em;
+  margin-top: 3em;
+  padding-left: 3.5em;
+  padding-right: 3.5em;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "photo info"; }
+
+.photo {
+  grid-area: photo; }
+
+.content {
+  grid-area: info; }
+
+.team-grid {
+  display: grid;
+  grid-gap: 7px;
+  margin-top: 3em;
+  padding-left: 4em;
+  padding-right: 4em;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "tm1 tm2 tm3 tm4" "n1 n2 n3 n4" "t1 t2 t3 t4" "ic1 ic2 ic3 ic4"; }
+
+.team-member-1 {
+  grid-area: tm1; }
+
+.name1 {
+  grid-area: n1; }
+
+.title1 {
+  grid-area: t1; }
+
+.icons1 {
+  grid-area: ic1; }
+
+.team-member-2 {
+  grid-area: tm2; }
+
+.name2 {
+  grid-area: n2; }
+
+.title2 {
+  grid-area: t2; }
+
+.icons2 {
+  grid-area: ic2; }
+
+.team-member-3 {
+  grid-area: tm3; }
+
+.name3 {
+  grid-area: n3; }
+
+.title3 {
+  grid-area: t3; }
+
+.icons3 {
+  grid-area: ic3; }
+
+.team-member-4 {
+  grid-area: tm4; }
+
+.name4 {
+  grid-area: n4; }
+
+.title4 {
+  grid-area: t4; }
+
+.icons4 {
+  grid-area: ic4; }
 
 /*# sourceMappingURL=main.css.map */
