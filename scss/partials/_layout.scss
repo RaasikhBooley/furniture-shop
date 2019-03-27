@@ -260,6 +260,7 @@
     align-self: center;
 }
 
+// who we are section grid
 .who-grid {
     display: grid;
     grid-gap: 1em;
@@ -280,7 +281,7 @@
     grid-area: info;
 }
 
-
+// what we do section grid
 .what-grid {
     display: grid;
     grid-gap: 1em;
@@ -301,7 +302,7 @@
     grid-area: info;
 }
 
-// meet the team grid section
+// meet the team section grid
 .team-grid {
     display: grid;
     grid-gap: 7px;
@@ -381,8 +382,141 @@
     grid-area: ic4;
 }
 
+// blog top section grid
+.blog-top {
+    display: grid;
+    margin-top: 1em;
+    height: 2em;
+    grid-gap: 7px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "blog . share"
+}
 
+.blog {
+    grid-area: blog;
+}
 
+.share {
+    grid-area: share;
+}
 
+// blog main or articles section grid 
+.blog-articles {
+    display: grid;
+    // height: 5em;
+    margin-top: 2em;
+    grid-gap: 2em;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        ". arcticle1 arcticle2 arcticle3 ."
+        ". arcticle4 arcticle5 arcticle6 ."
+}
 
+.arcticle1 {
+    grid-area: arcticle1;
+}
 
+.arcticle2 {
+    grid-area: arcticle2;
+}
+
+.arcticle3 {
+    grid-area: arcticle3;
+}
+
+.arcticle4 {
+    grid-area: arcticle4;
+}
+
+.arcticle5 {
+    grid-area: arcticle5;
+}
+
+.arcticle6 {
+    grid-area: arcticle6;
+}
+
+// shop page
+
+.shop-top {
+    display: grid;
+    color: $black-light-grey;
+    margin: 1em;
+    height: 2em;
+    grid-gap: 7px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "showing . sel-order"
+}
+
+.show {
+    grid-area: showing;
+}
+
+.sel-order {
+    grid-area: sel-order;
+}
+
+.shop-items {
+    display: grid;
+    // margin: 1em;
+    // height: 2em;
+    grid-gap: 7px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "pro-section1"
+        "pro-section2"
+        "pro-section3"
+        "pro-section4"
+}
+
+.pro-section1 {
+    grid-area: pro-section1; 
+}
+
+.pro-section2 {
+    grid-area: pro-section2; 
+
+}
+.pro-section3 {
+    grid-area: pro-section3; 
+}
+
+.pro-section4 {
+    grid-area: pro-section4; 
+}
+
+.pro-section {
+    display: grid;
+    // margin: 1em;
+    // height: 2em;
+    grid-gap: 7px;
+    grid-template-columns: repeat (3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+        "pro-img pro-name ."
+        "pro-img pro-price ."
+        "pro-img pro-desrcipt ."
+        "pro-img pro-descript ."
+}
+
+.pro-img {
+    grid-area: pro-img;
+}
+
+.pro-name {
+    grid-area: pro-name;
+}
+
+.pro-price {
+    grid-area: pro-price;
+}
+
+.pro-descript {
+    grid-area: pro-descript;
+}

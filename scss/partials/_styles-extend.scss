@@ -15,12 +15,7 @@
     font-family: $SourceSansPro;
     font-size: 12px;
     font-weight: 300;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
     text-align: center;
-    // color: #999999;
 }
 
 .tag {
@@ -28,9 +23,6 @@
     // height: 9px;
     font-family: $SourceSansPro;
     font-size: 12px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
     // line-height: 1.83;
     letter-spacing: 2.4px;
     // text-align: left;
@@ -43,11 +35,6 @@
     // height: 15px;
     font-family: FontAwesome;
     font-size: 15px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
     text-align: center;
     // color: #999999
 }
@@ -208,7 +195,7 @@
         text-align: center;
         padding-top: 1.5em;
     }
-  }
+}
 
 // style code for alt pages like shop, about, blog, contact, lookbook
   .header-alt {
@@ -277,5 +264,56 @@
 .team-member {
     width: 270px;
     height: 305px;
+    background-color: $black-light-grey;
+    color: $black-grey;
+    font-family: $SourceSansPro;
+    
+}
+
+.blog-area {
+    width: 100%;
+    height: 928px;
+    background-color: $white-prim;
+    h4 {
+        color: $black-grey;
+        font-family: $SourceSansPro;
+    }
+    h6 {
+        color: $warm-grey;
+        font-family: $SourceSansPro;
+    }
+    p {
+        color: $black-light-grey;
+        font-family: $SourceSansPro;
+    }
+    a {
+        color: $brownish;
+    }
+}
+
+.blog-tag {
+    color: $black-light-grey;
+}
+
+.bottom-line {
+    width: 1170px;
+    border-bottom: 1px $off-grey solid;
+}
+
+.art-pic {
+    width: 370px;
+    height: 225px;
+    background-color: $black-light-grey;
+}
+
+.shop-items {
+    width: 100%;
+    height: 1610px;
+    background-color: $white;
+}
+
+.pro-img {
+    width: 300px;
+    height: 300px;
     background-color: $black-light-grey;
 }
