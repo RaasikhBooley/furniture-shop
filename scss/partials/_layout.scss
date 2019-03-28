@@ -495,28 +495,76 @@
     display: grid;
     // margin: 1em;
     // height: 2em;
-    grid-gap: 7px;
-    grid-template-columns: repeat (3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    // grid-gap: 7px;
+    padding: 3em 9em;
+    grid-template-columns: repeat (2, 1fr);
+    grid-template-rows: auto;
     grid-template-areas: 
-        "pro-img pro-name ."
-        "pro-img pro-price ."
-        "pro-img pro-desrcipt ."
-        "pro-img pro-descript ."
+        "pro-img pro-info"
 }
 
 .pro-img {
     grid-area: pro-img;
 }
 
-.pro-name {
-    grid-area: pro-name;
+.pro-info {
+    grid-area: pro-info;
+    padding: 2em; 
+    h4 {
+        // width: 105px;
+        // height: 18px;
+        font-family: $SourceSansPro;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 1.92;
+        text-align: left;
+        color: $black-grey;
+    }
+    h5 {
+        // width: 64px;
+        // height: 12px;
+        font-family: $SourceSansPro;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 2.67;
+        text-align: left;
+        color: $warm-grey;
+    }
+    p {
+        // width: 805px;
+        // height: 64px;
+        font-family: $SourceSansPro;
+        font-size: 15px;
+        line-height: 1.67;
+        text-align: left;
+        color: $black-light-grey;
+    }
 }
 
-.pro-price {
-    grid-area: pro-price;
+// contact page
+
+.contact-info {
+    margin: 2em 0em;
+    display: grid;
+    // margin: 1em;
+    // height: 2em;
+    grid-gap: 0px;
+    grid-template-columns: repeat (5, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        ". location details hours ."
 }
 
-.pro-descript {
-    grid-area: pro-descript;
+.location {
+    grid-area: location;
+    margin-right: 0em;
+}
+
+.details {
+    grid-area: details;
+}
+
+.hours {
+    grid-area: hours;
+    margin-left: 0em;
 }

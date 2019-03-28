@@ -1,6 +1,7 @@
 // apply to all pages
 * {
     margin: 0 auto;
+    scroll-behavior: smooth;
 }
 // style for all anchor tags (it is not nested because iit applies to all)
 a {
@@ -53,4 +54,8 @@ h3 {
 
 ul {
     padding-left: 0;
+}
+
+i {
+    padding: 0 0.5em;
 }

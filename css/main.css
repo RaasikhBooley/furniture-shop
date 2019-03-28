@@ -1,5 +1,6 @@
 * {
-  margin: 0 auto; }
+  margin: 0 auto;
+  scroll-behavior: smooth; }
 
 a {
   text-decoration: none;
@@ -47,6 +48,9 @@ h3 {
 ul {
   padding-left: 0; }
 
+i {
+  padding: 0 0.5em; }
+
 .header {
   width: 100%;
   padding: 19px 0;
@@ -70,14 +74,43 @@ ul {
   display: inline;
   font-family: FontAwesome;
   font-size: 15px;
-  text-align: center; }
+  text-align: center;
+  padding: 0 0.5em; }
 
 .hero-banner {
   width: 100%;
   height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-banner-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: #666666;
   color: #ffffff;
   font-family: "Dosis", sans-serif; }
+
+.about-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-banner-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.shop-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-banner-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.contact-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-banner-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.blog-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-banner-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
 
 .navbar-grid {
   padding: 1em 0em; }
@@ -167,12 +200,24 @@ ul {
 
 .content {
   text-align: left; }
+  .content h4 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.92;
+    text-align: left;
+    color: #333333; }
+  .content h6 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 15px;
+    line-height: 3.2;
+    text-align: left;
+    color: #999999; }
   .content p {
-    width: 529px;
-    height: 239px;
-    font-family: SourceSansPro;
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 15px;
     line-height: 1.67;
+    text-align: left;
     color: #666666; }
 
 .footer-a {
@@ -215,6 +260,9 @@ ul {
   padding: 1em 0em; }
   .nav-grid-alt li {
     padding: 0em 1.5em; }
+
+.icon-alt {
+  padding-top: 3em; }
 
 .mid-alt a {
   color: #666666; }
@@ -275,7 +323,11 @@ ul {
   color: #666666; }
 
 .bottom-line {
-  width: 1170px;
+  width: 85%;
+  border-bottom: 1px #e6e6e6 solid; }
+
+.small-bottom-line {
+  width: 100%;
   border-bottom: 1px #e6e6e6 solid; }
 
 .art-pic {
@@ -292,6 +344,37 @@ ul {
   width: 300px;
   height: 300px;
   background-color: #666666; }
+
+.cart-btn {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 1.5px;
+  text-align: center;
+  color: #ffffff; }
+  .cart-btn p {
+    width: 180px;
+    height: 44px;
+    background-color: #ac907f;
+    margin: 0; }
+
+.location {
+  width: 390px;
+  height: 200px;
+  border: solid 1px #e6e6e6;
+  background-color: #f0f0f0; }
+
+.details {
+  width: 390px;
+  height: 200px;
+  border: solid 1px #e6e6e6;
+  background-color: #f0f0f0; }
+
+.hours {
+  width: 390px;
+  height: 200px;
+  border: solid 1px #e6e6e6;
+  background-color: #f0f0f0; }
 
 .header-grid {
   display: grid;
@@ -712,21 +795,55 @@ ul {
 
 .pro-section {
   display: grid;
-  grid-gap: 7px;
-  grid-template-columns: repeat 3, 1fr;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-areas: "pro-img pro-name ." "pro-img pro-price ." "pro-img pro-desrcipt ." "pro-img pro-descript ."; }
+  padding: 3em 9em;
+  grid-template-columns: repeat 2, 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "pro-img pro-info"; }
 
 .pro-img {
   grid-area: pro-img; }
 
-.pro-name {
-  grid-area: pro-name; }
+.pro-info {
+  grid-area: pro-info;
+  padding: 2em; }
+  .pro-info h4 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.92;
+    text-align: left;
+    color: #333333; }
+  .pro-info h5 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 2.67;
+    text-align: left;
+    color: #999999; }
+  .pro-info p {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 15px;
+    line-height: 1.67;
+    text-align: left;
+    color: #666666; }
 
-.pro-price {
-  grid-area: pro-price; }
+.contact-info {
+  margin: 2em 0em;
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: repeat 5, 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: ". location details hours ."; }
 
-.pro-descript {
-  grid-area: pro-descript; }
+.location {
+  grid-area: location;
+  margin-right: 0em; }
+
+.details {
+  grid-area: details; }
+
+.hours {
+  grid-area: hours;
+  margin-left: 0em; }
 
 /*# sourceMappingURL=main.css.map */
