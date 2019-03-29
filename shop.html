@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
     <title>NateB | Shop</title>
+    <!-- bootstrap -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- google fonts -->
@@ -51,6 +53,7 @@
                 <div class=".icon-alt">
                     <picture class="cart">
                         <i class="fas fa-shopping-cart"></i>
+                        <!-- <span class="glyphicon glyphicon-shopping-cart my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span> -->
                     </picture>
                     <picture class="search">
                         <i class="fas fa-search"></i>
@@ -75,49 +78,49 @@
         
         <div class="shop-items">
             <div class="pro-section pro-section1">
-                <div class="pro-img"></div>
+                <div class="pro-img pro-1"></div>
                 <div class="pro-info">
-                    <h4>Iron Chair</h4>
-                    <h5 class="pro-price">R400</h5>
-                    <p class="pro-desrcipt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit assumenda voluptates esse ad doloremque expedita, dolorum iste fugit eius, magnam culpa perferendis! Iure ea hic, id modi porro pariatur aliquid!</p>
+                    <h4>Alva pedestal - white & natural</h4>
+                    <h5 class="pro-price">R1599</h5>
+                    <p class="pro-desrcipt">Can we please have a warm welcome for your new bedside table? Fitted with solid wood legs and two drawers for all your essentials, this chic design complements almost any bedroom. Decorate it with a plant and a lampshade for a cosy night in.</p>
                     <br>
                     <a class="cart-btn" href=""><p><i class="fas fa-shopping-cart"></i>ADD TO CART</p></a>
                 </div>    
             </div>
 
             <div class="pro-section pro-section2">
-                <div class="pro-img"></div>
+                <div class="pro-img pro-2"></div>
                 <div class="pro-info">
-                    <h4>Iron Chair</h4>
-                    <h5 class="pro-price">R400</h5>
-                    <p class="pro-desrcipt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit assumenda voluptates esse ad doloremque expedita, dolorum iste fugit eius, magnam culpa perferendis! Iure ea hic, id modi porro pariatur aliquid!</p>
+                    <h4>Seaford desk - natural/black</h4>
+                    <h5 class="pro-price">R1199</h5>
+                    <p class="pro-desrcipt">With a desk so stunning, your productivity is sure to improve The desk features strong, geometric lines with a laminated wild oak wooden tabletop, making it easy to clean and preserve.</p>
                     <br>
                     <a class="cart-btn" href=""><p><i class="fas fa-shopping-cart"></i>ADD TO CART</p></a>
                 </div>
             </div>
             <div class="pro-section pro-section3">
-                <div class="pro-img"></div>
+                <div class="pro-img pro-3"></div>
                 <div class="pro-info">
-                    <h4>Iron Chair</h4>
-                    <h5 class="pro-price">R400</h5>
-                    <p class="pro-desrcipt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit assumenda voluptates esse ad doloremque expedita, dolorum iste fugit eius, magnam culpa perferendis! Iure ea hic, id modi porro pariatur aliquid!</p>
+                    <h4>Round san dining table</h4>
+                    <h5 class="pro-price">R1699</h5>
+                    <p class="pro-desrcipt">Bring a modern, minimalist touch to your space with this round dining table. Featuring wooden legs and a striking white top, it’ll fit into any decor theme. Complete the look with matching chairs and a standout rug.</p>
                     <br>
                     <a class="cart-btn" href=""><p><i class="fas fa-shopping-cart"></i>ADD TO CART</p></a>
                 </div>
             </div>
             <div class="pro-section pro-section4">
-                <div class="pro-img"></div>
+                <div class="pro-img pro-4"></div>
                 <div class="pro-info">
-                    <h4>Iron Chair</h4> 
+                    <h4>Barlow wire chair - black</h4> 
                     <!-- <i class="far fa-heart"></i> -->
-                    <h5 class="pro-price">R400</h5>
-                    <p class="pro-desrcipt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit assumenda voluptates esse ad doloremque expedita, dolorum iste fugit eius, magnam culpa perferendis! Iure ea hic, id modi porro pariatur aliquid!</p>
+                    <h5 class="pro-price">R1299</h5>
+                    <p class="pro-desrcipt">Modern and minimalist, this metal chair is a design feature in itself. Use it to accent an unloved corner, or grab a few and place them around your dining room table.</p>
                     <br>
                     <a class="cart-btn" href=""><p><i class="fas fa-shopping-cart"></i>ADD TO CART</p></a>
                 </div>
             </div>
+            <p class="page-num">1 2 3 4 ... 8 <i class="fas fa-angle-right"></i></p>
         </div>
-    
     </div>
     
 
@@ -181,5 +184,70 @@
     <div class="footer-b">
         <p>Copyright © 2019 Designed by nate_nonpareil. All rights reserved.</p>
     </div>
+
+  <!-- <script src="js/jquery-2.2.3.min.js"></script>
+  <script type='text/javascript' src="js/bootstrap.min.js"></script>
+  <script type='text/javascript' src="js/jquery.mycart.js"></script>
+  <script type="text/javascript">
+  $(function () {
+
+    var goToCartIcon = function($addTocartBtn){
+      var $cartIcon = $(".my-cart-icon");
+      var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({"position": "fixed", "z-index": "999"});
+      $addTocartBtn.prepend($image);
+      var position = $cartIcon.position();
+      $image.animate({
+        top: position.top,
+        left: position.left
+      }, 500 , "linear", function() {
+        $image.remove();
+      });
+    }
+
+    $('.my-cart-btn').myCart({
+      currencySymbol: 'R',
+      classCartIcon: 'my-cart-icon',
+      classCartBadge: 'my-cart-badge',
+      classProductQuantity: 'my-product-quantity',
+      classProductRemove: 'my-product-remove',
+      classCheckoutCart: 'my-cart-checkout',
+      affixCartIcon: true,
+      showCheckoutModal: true,
+      numberOfDecimals: 2,
+      cartItems: [
+        {id: 1, name: 'product 1', summary: 'summary 1', price: 10, quantity: 1, image: 'images/img_1.png'},
+        {id: 2, name: 'product 2', summary: 'summary 2', price: 20, quantity: 2, image: 'images/img_2.png'},
+        {id: 3, name: 'product 3', summary: 'summary 3', price: 30, quantity: 1, image: 'images/img_3.png'}
+      ],
+      clickOnAddToCart: function($addTocart){
+        goToCartIcon($addTocart);
+      },
+      afterAddOnCart: function(products, totalPrice, totalQuantity) {
+        console.log("afterAddOnCart", products, totalPrice, totalQuantity);
+      },
+      clickOnCartIcon: function($cartIcon, products, totalPrice, totalQuantity) {
+        console.log("cart icon clicked", $cartIcon, products, totalPrice, totalQuantity);
+      },
+      checkoutCart: function(products, totalPrice, totalQuantity) {
+        var checkoutString = "Total Price: " + totalPrice + "\nTotal Quantity: " + totalQuantity;
+        checkoutString += "\n\n id \t name \t summary \t price \t quantity \t image path";
+        $.each(products, function(){
+          checkoutString += ("\n " + this.id + " \t " + this.name + " \t " + this.summary + " \t " + this.price + " \t " + this.quantity + " \t " + this.image);
+        });
+        alert(checkoutString)
+        console.log("checking out", products, totalPrice, totalQuantity);
+      },
+      getDiscountPrice: function(products, totalPrice, totalQuantity) {
+        console.log("calculating discount", products, totalPrice, totalQuantity);
+        return totalPrice * 0.5;
+      }
+    });
+
+    $("#addNewProduct").click(function(event) {
+      var currentElementNo = $(".row").children().length + 1;
+      $(".row").append('<div class="col-md-3 text-center"><img src="images/img_empty.png" width="150px" height="150px"><br>product ' + currentElementNo + ' - <strong>$' + currentElementNo + '</strong><br><button class="btn btn-danger my-cart-btn" data-id="' + currentElementNo + '" data-name="product ' + currentElementNo + '" data-summary="summary ' + currentElementNo + '" data-price="' + currentElementNo + '" data-quantity="1" data-image="images/img_empty.png">Add to Cart</button><a href="#" class="btn btn-info">Details</a></div>')
+    });
+  });
+  </script> -->
 </body>
 </html>

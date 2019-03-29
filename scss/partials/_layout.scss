@@ -496,7 +496,7 @@
     // margin: 1em;
     // height: 2em;
     // grid-gap: 7px;
-    padding: 3em 9em;
+    padding: 2em 9em;
     grid-template-columns: repeat (2, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 
@@ -509,7 +509,7 @@
 
 .pro-info {
     grid-area: pro-info;
-    padding: 2em; 
+    padding: 0.5em 2em; 
     h4 {
         // width: 105px;
         // height: 18px;
@@ -544,15 +544,15 @@
 // contact page
 
 .contact-info {
-    margin: 2em 0em;
+    margin: 3.5em 0em;
     display: grid;
     // margin: 1em;
     // height: 2em;
     grid-gap: 0px;
-    grid-template-columns: repeat (5, 1fr);
+    grid-template-columns: repeat (7, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 
-        ". location details hours ."
+        ". . location details hours . ."
 }
 
 .location {
@@ -567,4 +567,44 @@
 .hours {
     grid-area: hours;
     margin-left: 0em;
+}
+
+.contact-form {
+    // margin: 2em 0em;
+    display: grid;
+    margin: 1em;
+    height: 2em;
+    grid-gap: 2em;
+    grid-template-columns: repeat (6, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        ". . name email . ."
+        ". . number subject . ."
+        ". . message message . ."
+        ". . email-btn . . ."
+}
+
+.name {
+    grid-area: name;
+}
+
+.email {
+    grid-area: email;
+}
+
+.number {
+    grid-area: number;
+}
+
+.subject {
+    grid-area: subject;
+}
+
+.message {
+    grid-area: message;
+}
+
+.email-btn {
+    grid-area: email-btn;
+    margin-left: 0.3em;
 }

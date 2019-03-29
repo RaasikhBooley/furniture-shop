@@ -11,6 +11,7 @@ a {
 
 li {
   display: inline;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 15px;
   letter-spacing: normal;
   text-align: center;
@@ -22,7 +23,7 @@ h1 {
   font-size: 50px;
   line-height: 0.96;
   letter-spacing: normal;
-  text-align: center; }
+  text-align: center !important; }
 
 h2 {
   width: 313px;
@@ -50,6 +51,10 @@ ul {
 
 i {
   padding: 0 0.5em; }
+
+::placeholder {
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 1em; }
 
 .header {
   width: 100%;
@@ -88,26 +93,20 @@ i {
   color: #ffffff;
   font-family: "Dosis", sans-serif; }
 
-.about-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-banner-2.jpg");
+.modern-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/furniture-about.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
 
-.shop-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-banner-2.jpg");
+.vintage-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/677443.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
 
-.contact-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-banner-2.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
-
-.blog-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-banner-2.jpg");
+.accessories-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/accessories1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
@@ -240,7 +239,8 @@ i {
   background-color: #d7d7d7; }
   .footer-b p {
     text-align: center;
-    padding-top: 1.5em; }
+    padding-top: 1.5em;
+    font-family: "Source Sans Pro", sans-serif; }
 
 .header-alt {
   width: 100%;
@@ -293,7 +293,7 @@ i {
 
 .team {
   width: 100%;
-  height: 721px;
+  height: 581px;
   background: #ffffff; }
 
 .team-member {
@@ -356,7 +356,41 @@ i {
     width: 180px;
     height: 44px;
     background-color: #ac907f;
-    margin: 0; }
+    margin: 2em 0em; }
+
+.page-num {
+  margin-right: 12em;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #333333; }
+
+.contact-field {
+  width: 570px;
+  height: 50px;
+  border: solid 1px #e6e6e6;
+  background-color: #ffffff; }
+
+.message-field {
+  width: 1170px;
+  height: 150px;
+  border: solid 1px #e6e6e6;
+  background-color: #ffffff; }
+
+.email-btn {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 1.5px;
+  text-align: center;
+  color: #ffffff; }
+  .email-btn p {
+    width: 155px;
+    height: 40px;
+    background-color: #ac907f;
+    margin-left: 0em; }
+
+.contact-section {
+  width: 100%;
+  height: 741px; }
 
 .location {
   width: 390px;
@@ -375,6 +409,60 @@ i {
   height: 200px;
   border: solid 1px #e6e6e6;
   background-color: #f0f0f0; }
+
+.home-made {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/home-made.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.about-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-banner-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.contact-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-banner-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.blog-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-banner-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.shop-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-banner-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.pro-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/pro-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.pro-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/pro-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.pro-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/pro-3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.pro-4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/pro-4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
 
 .header-grid {
   display: grid;
@@ -795,7 +883,7 @@ i {
 
 .pro-section {
   display: grid;
-  padding: 3em 9em;
+  padding: 2em 9em;
   grid-template-columns: repeat 2, 1fr;
   grid-template-rows: auto;
   grid-template-areas: "pro-img pro-info"; }
@@ -805,7 +893,7 @@ i {
 
 .pro-info {
   grid-area: pro-info;
-  padding: 2em; }
+  padding: 0.5em 2em; }
   .pro-info h4 {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 25px;
@@ -828,12 +916,12 @@ i {
     color: #666666; }
 
 .contact-info {
-  margin: 2em 0em;
+  margin: 3.5em 0em;
   display: grid;
   grid-gap: 0px;
-  grid-template-columns: repeat 5, 1fr;
+  grid-template-columns: repeat 7, 1fr;
   grid-template-rows: auto;
-  grid-template-areas: ". location details hours ."; }
+  grid-template-areas: ". . location details hours . ."; }
 
 .location {
   grid-area: location;
@@ -845,5 +933,33 @@ i {
 .hours {
   grid-area: hours;
   margin-left: 0em; }
+
+.contact-form {
+  display: grid;
+  margin: 1em;
+  height: 2em;
+  grid-gap: 2em;
+  grid-template-columns: repeat 6, 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: ". . name email . ." ". . number subject . ." ". . message message . ." ". . email-btn . . ."; }
+
+.name {
+  grid-area: name; }
+
+.email {
+  grid-area: email; }
+
+.number {
+  grid-area: number; }
+
+.subject {
+  grid-area: subject; }
+
+.message {
+  grid-area: message; }
+
+.email-btn {
+  grid-area: email-btn;
+  margin-left: 0.3em; }
 
 /*# sourceMappingURL=main.css.map */
