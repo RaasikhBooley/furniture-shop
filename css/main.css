@@ -261,11 +261,10 @@ i {
   .nav-grid-alt li {
     padding: 0em 1.5em; }
 
-.icon-alt {
-  padding-top: 3em; }
-
-.mid-alt a {
-  color: #666666; }
+.mid-alt {
+  margin-right: 0; }
+  .mid-alt a {
+    color: #666666; }
 
 .hero-alt {
   width: 100%;
@@ -332,8 +331,31 @@ i {
 
 .art-pic {
   width: 370px;
-  height: 225px;
-  background-color: #666666; }
+  height: 225px; }
+
+.p1 {
+  background: url("../img/2016-collection.jpg");
+  background-size: cover; }
+
+.p2 {
+  background: url("../img/luxary-sofa.jpg");
+  background-size: cover; }
+
+.p3 {
+  background: url("../img/chair-collection.jpg");
+  background-size: cover; }
+
+.p4 {
+  background: url("../img/comfort-home.jpg");
+  background-size: cover; }
+
+.p5 {
+  background: url("../img/brick-walls.jpg");
+  background-size: cover; }
+
+.p6 {
+  background: url("../img/kitchen-ideas.jpg");
+  background-size: cover; }
 
 .shop-items {
   width: 100%;
@@ -350,13 +372,13 @@ i {
   font-size: 15px;
   line-height: 1.6;
   letter-spacing: 1.5px;
-  text-align: center;
-  color: #ffffff; }
+  text-align: center; }
   .cart-btn p {
     width: 180px;
     height: 44px;
     background-color: #ac907f;
-    margin: 2em 0em; }
+    margin: 2em 0em;
+    color: #ffffff !important; }
 
 .page-num {
   margin-right: 12em;
@@ -386,7 +408,8 @@ i {
     width: 155px;
     height: 40px;
     background-color: #ac907f;
-    margin-left: 0em; }
+    margin-left: 0em;
+    padding-top: 1em; }
 
 .contact-section {
   width: 100%;
@@ -397,18 +420,65 @@ i {
   height: 200px;
   border: solid 1px #e6e6e6;
   background-color: #f0f0f0; }
+  .location h2 {
+    padding-top: 0.5em;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 1.3px;
+    text-align: center; }
+  .location p {
+    padding-top: 1em;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: center;
+    color: #666666; }
+  .location .locate {
+    padding-top: 1em;
+    text-align: center;
+    font-size: 2em; }
 
 .details {
   width: 390px;
   height: 200px;
   border: solid 1px #e6e6e6;
   background-color: #f0f0f0; }
+  .details p {
+    padding: 2em;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: left;
+    color: #666666; }
+  .details hr {
+    color: #e5e5e5; }
 
 .hours {
   width: 390px;
   height: 200px;
   border: solid 1px #e6e6e6;
   background-color: #f0f0f0; }
+  .hours h2 {
+    padding-top: 0.5em;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 1.3px;
+    text-align: center; }
+  .hours p {
+    padding-top: 1em;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: center;
+    color: #666666; }
+  .hours .clock {
+    padding-top: 1em;
+    text-align: center;
+    font-size: 2em; }
 
 .home-made {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/home-made.jpg");
@@ -674,28 +744,60 @@ i {
   grid-template-areas: "pic1 pic2 pic3 pic4" "pic5 pic6 pic7 pic8"; }
 
 .pic1 {
-  grid-area: pic1; }
+  grid-area: pic1;
+  background: url(../img/insta-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .pic2 {
-  grid-area: pic2; }
+  grid-area: pic2;
+  background: url(../img/insta-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .pic3 {
-  grid-area: pic3; }
+  grid-area: pic3;
+  background: url(../img/insta-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .pic4 {
-  grid-area: pic4; }
+  grid-area: pic4;
+  background: url(../img/insta-4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .pic5 {
-  grid-area: pic5; }
+  grid-area: pic5;
+  background: url(../img/insta-5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .pic6 {
-  grid-area: pic6; }
+  grid-area: pic6;
+  background: url(../img/insta-6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .pic7 {
-  grid-area: pic7; }
+  grid-area: pic7;
+  background: url(../img/insta-7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .pic8 {
-  grid-area: pic8; }
+  grid-area: pic8;
+  background: url(../img/insta-8.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .nav-grid-alt {
   display: grid;
@@ -725,8 +827,12 @@ i {
   grid-template-rows: auto;
   grid-template-areas: "info photo"; }
 
-.photo {
-  grid-area: photo; }
+.who-photo {
+  grid-area: photo;
+  background: url(../img/construction-students.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .content {
   grid-area: info; }
@@ -741,8 +847,12 @@ i {
   grid-template-rows: auto;
   grid-template-areas: "photo info"; }
 
-.photo {
-  grid-area: photo; }
+.what-photo {
+  grid-area: photo;
+  background: url(../img/making-furniture.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .content {
   grid-area: info; }
@@ -758,52 +868,80 @@ i {
   grid-template-areas: "tm1 tm2 tm3 tm4" "n1 n2 n3 n4" "t1 t2 t3 t4" "ic1 ic2 ic3 ic4"; }
 
 .team-member-1 {
-  grid-area: tm1; }
+  grid-area: tm1;
+  background: url(../img/nate.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
 
 .name1 {
-  grid-area: n1; }
+  grid-area: n1;
+  color: #333333; }
 
 .title1 {
-  grid-area: t1; }
+  grid-area: t1;
+  color: #999999; }
 
 .icons1 {
-  grid-area: ic1; }
+  grid-area: ic1;
+  color: #555555; }
 
 .team-member-2 {
-  grid-area: tm2; }
+  grid-area: tm2;
+  background: url(../img/keith.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
 
 .name2 {
-  grid-area: n2; }
+  grid-area: n2;
+  color: #333333; }
 
 .title2 {
-  grid-area: t2; }
+  grid-area: t2;
+  color: #999999; }
 
 .icons2 {
-  grid-area: ic2; }
+  grid-area: ic2;
+  color: #555555; }
 
 .team-member-3 {
-  grid-area: tm3; }
+  grid-area: tm3;
+  background: url(../img/tendekai.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
 
 .name3 {
-  grid-area: n3; }
+  grid-area: n3;
+  color: #333333; }
 
 .title3 {
-  grid-area: t3; }
+  grid-area: t3;
+  color: #999999; }
 
 .icons3 {
-  grid-area: ic3; }
+  grid-area: ic3;
+  color: #555555; }
 
 .team-member-4 {
-  grid-area: tm4; }
+  grid-area: tm4;
+  background: url(../img/henry.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
 
 .name4 {
-  grid-area: n4; }
+  grid-area: n4;
+  color: #333333; }
 
 .title4 {
-  grid-area: t4; }
+  grid-area: t4;
+  color: #999999; }
 
 .icons4 {
-  grid-area: ic4; }
+  grid-area: ic4;
+  color: #555555; }
 
 .blog-top {
   display: grid;
@@ -912,27 +1050,27 @@ i {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 15px;
     line-height: 1.67;
-    text-align: left;
+    margin-top: 0.5em;
+    padding-top: 1em;
     color: #666666; }
 
 .contact-info {
   margin: 3.5em 0em;
   display: grid;
-  grid-gap: 0px;
-  grid-template-columns: repeat 7, 1fr;
+  grid-template-columns: repeat 5, 1fr;
   grid-template-rows: auto;
-  grid-template-areas: ". . location details hours . ."; }
+  grid-template-areas: ". location details hours ."; }
 
 .location {
   grid-area: location;
-  margin-right: 0em; }
+  margin-left: 5.3em; }
 
 .details {
   grid-area: details; }
 
 .hours {
   grid-area: hours;
-  margin-left: 0em; }
+  margin-right: 5.3em; }
 
 .contact-form {
   display: grid;
@@ -961,5 +1099,85 @@ i {
 .email-btn {
   grid-area: email-btn;
   margin-left: 0.3em; }
+
+.masonary-gallery {
+  display: grid;
+  margin: 0 auto;
+  grid-gap: 1em;
+  padding: 1em;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto; }
+
+.g-pic-1 {
+  background: url(../img/pic-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  width: 100%;
+  grid-row: 1/20; }
+
+.g-pic-2 {
+  background: url(../img/pic-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  grid-column: 2/3;
+  grid-row: 1/16; }
+
+.g-pic-3 {
+  background: url(../img/pic-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  grid-column: 3/3;
+  grid-row: 1/17; }
+
+.g-pic-4 {
+  background: url(../img/pic-4-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  grid-column: 1/2;
+  grid-row: 20/45; }
+
+.g-pic-5 {
+  background: url(../img/pic-5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  grid-column: 2/3;
+  grid-row: 16/30; }
+
+.g-pic-6 {
+  background: url(../img/pic-6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  grid-column: 3/3;
+  grid-row: 17/45; }
+
+.g-pic-7 {
+  background: url(../img/pic-7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  grid-column: 1/2;
+  grid-row: 45/65; }
+
+.g-pic-8 {
+  background: url(../img/pic-8.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  grid-column: 2/3;
+  grid-row: 30/60; }
+
+.g-pic-9 {
+  background: url(../img/pic-9.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  grid-column: 3/3;
+  grid-row: 45/65; }
 
 /*# sourceMappingURL=main.css.map */

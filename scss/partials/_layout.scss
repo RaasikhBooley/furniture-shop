@@ -205,34 +205,66 @@
 
 .pic1 {
     grid-area: pic1;
+    background: url(../img/insta-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .pic2 {
     grid-area: pic2;
+    background: url(../img/insta-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .pic3 {
     grid-area: pic3;
+    background: url(../img/insta-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .pic4 {
     grid-area: pic4;
+    background: url(../img/insta-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .pic5 {
     grid-area: pic5;
+    background: url(../img/insta-5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .pic6 {
     grid-area: pic6;
+    background: url(../img/insta-6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .pic7 {
     grid-area: pic7;
+    background: url(../img/insta-7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .pic8 {
     grid-area: pic8;
+    background: url(../img/insta-8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 // grid code for alt pages like shop, about, blog, contact, lookbook
@@ -242,7 +274,7 @@
     grid-template-columns: 1fr 3fr 1rf;
     grid-template-rows: auto;
     grid-template-areas: 
-        "logo-alt mid-alt icons-alt" 
+        "logo-alt mid-alt icons-alt";
 }
 
 .logo-alt {
@@ -273,8 +305,12 @@
         "info photo"
 }
 
-.photo {
+.who-photo {
     grid-area: photo;
+    background: url(../img/construction-students.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .content {
@@ -294,8 +330,12 @@
         "photo info"
 }
 
-.photo {
+.what-photo {
     grid-area: photo;
+    background: url(../img/making-furniture.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .content {
@@ -320,66 +360,94 @@
 
 .team-member-1 {
     grid-area: tm1;
+    background: url(../img/nate.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .name1 {
     grid-area: n1;
+    color: $black-grey;
 }
 
 .title1 {
     grid-area: t1;
+    color: $warm-grey;
 }
 
 .icons1 {
     grid-area: ic1;
+    color: $greyish-brown;
 }
 
 .team-member-2 {
     grid-area: tm2;
+    background: url(../img/keith.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .name2 {
     grid-area: n2;
+    color: $black-grey;
 }
 
 .title2 {
     grid-area: t2;
+    color: $warm-grey;
 }
 
 .icons2 {
     grid-area: ic2;
+    color: $greyish-brown;
 }
 
 .team-member-3 {
     grid-area: tm3;
+    background: url(../img/tendekai.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .name3 {
     grid-area: n3;
+    color: $black-grey;
 }
 
 .title3 {
     grid-area: t3;
+    color: $warm-grey;
 }
 
 .icons3 {
     grid-area: ic3;
+    color: $greyish-brown;
 }
 
 .team-member-4 {
     grid-area: tm4;
+    background: url(../img/henry.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .name4 {
     grid-area: n4;
+    color: $black-grey;
 }
 
 .title4 {
     grid-area: t4;
+    color: $warm-grey;
 }
 
 .icons4 {
     grid-area: ic4;
+    color: $greyish-brown;
 }
 
 // blog top section grid
@@ -536,7 +604,9 @@
         font-family: $SourceSansPro;
         font-size: 15px;
         line-height: 1.67;
-        text-align: left;
+        // text-align: left;
+        margin-top: 0.5em;
+        padding-top: 1em;
         color: $black-light-grey;
     }
 }
@@ -548,25 +618,27 @@
     display: grid;
     // margin: 1em;
     // height: 2em;
-    grid-gap: 0px;
-    grid-template-columns: repeat (7, 1fr);
+    // padding: 0;
+    // grid-gap: 0px;
+    grid-template-columns: repeat (5, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 
-        ". . location details hours . ."
+        ". location details hours ."
 }
 
 .location {
     grid-area: location;
-    margin-right: 0em;
+    margin-left: 5.3em;
 }
 
 .details {
     grid-area: details;
+    // margin: 0em;
 }
 
 .hours {
     grid-area: hours;
-    margin-left: 0em;
+    margin-right: 5.3em;
 }
 
 .contact-form {
@@ -607,4 +679,96 @@
 .email-btn {
     grid-area: email-btn;
     margin-left: 0.3em;
+}
+
+.masonary-gallery {
+    display: grid;
+    // width: 100%;
+    margin: 0 auto;
+    grid-gap: 1em;
+    padding: 1em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+
+.g-pic-1 {
+    background: url(../img/pic-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    width: 100%;
+    // grid-column: 1/2;
+    grid-row: 1/20;
+}
+
+.g-pic-2 {
+    background: url(../img/pic-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    grid-column: 2/3;
+    grid-row: 1/16;
+}
+
+.g-pic-3 {
+    background: url(../img/pic-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    grid-column: 3/3;
+    grid-row: 1/17;
+}
+
+.g-pic-4 {
+    background: url(../img/pic-4-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    grid-column: 1/2;
+    grid-row: 20/45;
+}
+
+.g-pic-5 {
+    background: url(../img/pic-5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    grid-column: 2/3;
+    grid-row: 16/30;
+}
+
+.g-pic-6 {
+    background: url(../img/pic-6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    grid-column: 3/3;
+    grid-row: 17/45;
+}
+
+.g-pic-7 {
+    background: url(../img/pic-7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    grid-column: 1/2;
+    grid-row: 45/65;
+}
+
+.g-pic-8 {
+    background: url(../img/pic-8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    grid-column: 2/3;
+    grid-row: 30/60;
+}
+
+.g-pic-9 {
+    background: url(../img/pic-9.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    grid-column: 3/3;
+    grid-row: 45/65;
 }

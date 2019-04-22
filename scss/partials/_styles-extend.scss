@@ -255,7 +255,7 @@
     background-color: $black;
     color: $warm-grey;
     font-family: $SourceSansPro;
-    background-color: #eeeeee;
+    background-color: $bright-white;
 }
 
 .nav-alt {
@@ -268,16 +268,14 @@
 .nav-grid-alt {
     padding:  1em 0em;
     li {
-        padding: 0em 1.5em
+        padding: 0em 1.5em;
     }
 }
 
-.icon-alt {
-    padding-top: 3em;
-}
 
 .mid-alt {
-    a {
+    margin-right: 0;
+    a {  
         color: $black-light-grey;
     }
 }
@@ -364,8 +362,39 @@
 .art-pic {
     width: 370px;
     height: 225px;
-    background-color: $black-light-grey;
+    // background-color: $black-light-grey;
 }
+
+.p1 {
+    background: url("../img/2016-collection.jpg");
+    background-size: cover;
+}
+
+.p2 {
+    background: url("../img/luxary-sofa.jpg");
+    background-size: cover;
+}
+
+.p3 {
+    background: url("../img/chair-collection.jpg");
+    background-size: cover;
+}
+
+.p4 {
+    background: url("../img/comfort-home.jpg");
+    background-size: cover;
+}
+
+.p5 {
+    background: url("../img/brick-walls.jpg");
+    background-size: cover;
+}
+
+.p6 {
+    background: url("../img/kitchen-ideas.jpg");
+    background-size: cover;
+}
+
 
 .shop-items {
     width: 100%;
@@ -387,12 +416,12 @@
     line-height: 1.6;
     letter-spacing: 1.5px;
     text-align: center;
-    color: $white-prim;
     p {
         width: 180px;
         height: 44px;
         background-color: $mushroom;
         margin: 2em 0em;
+        color: $white-prim !important;
     }
 }
 
@@ -430,6 +459,7 @@
         height: 40px;
         background-color: $mushroom;
         margin-left: 0em;
+        padding-top: 1em;
     }
 }
 
@@ -442,22 +472,80 @@
 .location {
     width: 390px;
     height: 200px;
-    border: solid 1px #e6e6e6;
-    background-color: #f0f0f0;
+    border: solid 1px $off-grey;
+    background-color: $another-white;
+    h2 {
+        padding-top: 0.5em;
+        font-family: $SourceSansPro;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: 1.3px;
+        text-align: center;
+    }
+    
+    p {
+        padding-top: 1em;
+        font-family: $SourceSansPro;
+        font-size: 18px;
+        line-height: 1.39;
+        text-align: center;
+        color: $black-light-grey;
+    }
+    .locate {
+        padding-top: 1em;
+        text-align: center;
+        font-size: 2em
+    }
 }
 
 .details {
     width: 390px;
     height: 200px;
-    border: solid 1px #e6e6e6;
-    background-color: #f0f0f0;
+    border: solid 1px $off-grey;
+    background-color: $another-white;
+    p {
+        padding: 2em;
+        font-family: $SourceSansPro;
+        font-size: 18px;
+        line-height: 1.39;
+        text-align: left;
+        color: $black-light-grey
+    }
+    hr {
+        color: $off-white;
+    }
 }
 
 .hours {
     width: 390px;
     height: 200px;
-    border: solid 1px #e6e6e6;
-    background-color: #f0f0f0;
+    border: solid 1px $off-grey;
+    background-color: $another-white;
+
+    h2 {
+        padding-top: 0.5em;
+        font-family: $SourceSansPro;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: 1.3px;
+        text-align: center;
+    }
+    
+    p {
+        padding-top: 1em;
+        font-family: $SourceSansPro;
+        font-size: 18px;
+        line-height: 1.39;
+        text-align: center;
+        color: $black-light-grey;
+    }
+    .clock {
+        padding-top: 1em;
+        text-align: center;
+        font-size: 2em
+    }
 }
 
 .home-made {
@@ -522,6 +610,8 @@
     background-position: center;
     background-size: cover;
 }
+
+
 
 
 
